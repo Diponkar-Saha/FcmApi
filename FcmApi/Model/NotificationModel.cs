@@ -1,0 +1,42 @@
+﻿using Newtonsoft.Json;
+
+namespace FcmApi.Model
+{
+    public class NotificationModel
+    {
+        [JsonProperty("deviceId")]
+        public string DeviceId { get; set; }
+        [JsonProperty("isSingleAndroiodDevice")]
+        public bool IsSingleAndroiodDevice { get; set; }
+        [JsonProperty("title")]
+        public string Title { get; set; }
+        [JsonProperty("body")]
+        public string Body { get; set; }
+    }
+
+    public class GoogleNotification
+    {
+        public class DataPayload
+        {
+            [JsonProperty("title")]
+            public string Title { get; set; }
+            [JsonProperty("body")]
+            public string Body { get; set; }
+        }
+        [JsonProperty("priority")]
+        public string Priority { get; set; } = "high";
+
+        [JsonProperty("data")]
+        public DataPayload Data { get; set; }
+        [JsonProperty("notification")]
+        public DataPayload Notification { get; set; }
+    }
+
+   
+
+    public class FcmNotificationSetting
+    {
+        public string SenderId { get; set; }
+        public string ServerKey { get; set; }
+    }
+}

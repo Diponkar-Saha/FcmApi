@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0v4ajEmUxlz9+xmCkyJFHg1bpewhB6GYMYwPeI/qDQQ=",
+  "Source": "FcmApi",
+  "BasePath": "_content/FcmApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
